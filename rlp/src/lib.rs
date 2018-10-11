@@ -54,9 +54,9 @@ pub use rlpin::{Rlp, RlpIterator, PayloadInfo, Prototype};
 pub use stream::RlpStream;
 
 /// The RLP encoded empty data (used to mean "null value").
-pub const NULL_RLP: [u8; 1] = [0x80; 1];
+pub const NULL_RLP: u8 = 0x80;
 /// The RLP encoded empty list.
-pub const EMPTY_LIST_RLP: [u8; 1] = [0xC0; 1];
+pub const EMPTY_LIST_RLP: u8 = 0xC0;
 
 /// Shortcut function to decode trusted rlp
 ///
